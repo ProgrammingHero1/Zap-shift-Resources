@@ -1,4 +1,4 @@
-# <u>ZAPSHIFT - Dashboard Requirements </u>
+# <u>ZAPSHIFT </u>
 
 ---
 
@@ -21,7 +21,7 @@
 
 1. **Users** are registered users who initiate parcel deliveries through the platform. Their responsibilities include:
 
-   1. Creating and submitting parcel booking requests with accurate type, weight, destination, and contact details.
+   1. Creating and submitting parcel with accurate type, weight, destination, and contact details.
    2. Making payment based on dynamic pricing calculated by the system.
    3. Receiving a unique tracking ID for each parcel.
    4. Monitoring parcel status in real-time.
@@ -33,10 +33,10 @@
 
 1. **Admins** are system operators responsible for managing parcel logistics and overseeing operational efficiency. Their key functions include:
 
-   1. Assigning pickup riders and setting estimated delivery dates.
-   2. Managing inter-district parcel routing and coordinating service center operations.
-   3. Assigning delivery riders for last-mile delivery at the destination.
-   4. Monitoring parcel movement, rider performance, and overall system operations.
+   1. Manage , Approve / Reject Agent
+   2. Assigning pickup riders & Delivery Riders.
+   3. Managing inter-district parcel routing and coordinating service center operations.
+   4. Monitoring parcel movement, performance, and overall system operations.
 
 ---
 
@@ -49,6 +49,7 @@
       1. Collect parcels directly from users.
       2. Update the system to reflect transit and delivery readiness.
       3. Deliver parcels to customers.
+
    2. **Outside City**
 
       1. Collect parcels directly from users.
@@ -69,6 +70,7 @@
       2. Some Dynamic Navigation Links based on user Role
       3. Navigation for Public Interfaces (Home, Coverage, etc)
       4. **LogOut Button**, on Clicking It user will be logged out
+
    2. **Pages at the Right**
 
       1. Pages will be show dynamically based on Routes
@@ -113,11 +115,13 @@
    1. **Parcel Info (3)**:
 
       1. type (document, non-document), title, weight (if type non-document)
+
    2. **Sender info (6)**:
 
       1. Name (prefilled), contact
       2. Select Region, Select Service Center
       3. Address, Pick up Instruction
+
    3. **Receiver info (6)**:
 
       1. Name, contact
@@ -128,7 +132,7 @@
 
 5. The cost will be calculated based on type, service center & weight.
 
-6. On Clicking Submit Show user a Toast with Delivery Cost and a confirmation button. By clicking confirm, save the parcel info into the database with a creation\_date
+6. On Clicking Submit Show user a Toast with Delivery Cost and a confirmation button. By clicking confirm, save the parcel info into the database with a creation_date
 
 ---
 
@@ -160,9 +164,9 @@
 3. On Successful payment
 
    1. Save Payment Info
-   2. Add a 6 digit unique tracking\_no to the parcel
-   3. Insert a tracking\_doc to the tracking\_collection
-   4. Show a Success Alert with Tracking\_No & Transaction
+   2. Add a 6 digit unique tracking_no to the parcel
+   3. Insert a tracking_doc to the tracking_collection
+   4. Show a Success Alert with Tracking_No & Transaction
 
 ---
 
@@ -184,14 +188,6 @@
 
 ---
 
-### <u>Discussion (User)</u>
-
-1. Show an Add Review Button with an input field and a rating
-2. Disable Add review Button if user have zero paid parcel
-3. show all the reviews on the system
-4. If the reviewer is a current user, show a 3 dot icon with a drop down, update, delete. Button. Implement, update and delete features.
-
----
 
 ### <u>User Settings (User, Rider, Admin)</u>
 
@@ -242,9 +238,9 @@
 
 2. Show all the Parcel Counts
 
-3. A search System based on tracking\_no
+3. A search System based on tracking_no
 
-4. Show Parcel Info such as Origin, destination, Tracking\_no, status, date, Actionable buttons (view, Manage)
+4. Show Parcel Info such as Origin, destination, Tracking_no, status, date, Actionable buttons (view, Manage)
 
    1. **View** will take user to parcel Details
    2. **Manage** will take user to manage Parcel Delivery Route
@@ -327,7 +323,7 @@
 ### <u>Parcel-to-PickUp (Rider)</u>
 
 1. Show Parcels where pickUp rider is user and status "ready-to-pickup" in a table format with address, sender contact and info and date
-2. Add a button **Confirm PickUp**. On Clicking It, show Modal with Confirm Tracking\_no Input and Confirm button. On writing correct tracking\_no do some action
+2. Add a button **Confirm PickUp**. On Clicking It, show Modal with Confirm Tracking_no Input and Confirm button. On writing correct tracking_no do some action
 3. Parcel status will be changed to "in-transit" ( if the origin & destination service center different ) / "ready-for-delivery" ( if the origin & destination service center same )
 4. a new tracking doc will be stored in tracking with a status message
 5. Rider Earning will be increased by 20.
@@ -337,9 +333,8 @@
 ### <u>Parcel-to-Delivery (Rider)</u>
 
 1. Show Parcels where delivery rider is user and status "ready-for-delivery" in a table format with address, receiver contact and info, and date
-2. Add a button **Confirm Delivery**. On Clicking It, show Modal with Confirm Tracking\_no Input and Confirm button. On writing correct tracking\_no do some action
+2. Add a button **Confirm Delivery**. On Clicking It, show Modal with Confirm Tracking_no Input and Confirm button. On writing correct tracking_no do some action
 3. Parcel status will be changed to "delivered". A new tracking doc will be stored in tracking with a status message
 4. Rider Earning will be increased by 20.
 
 ---
-
