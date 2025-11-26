@@ -4,7 +4,7 @@
 
 ```js
 //comment following commands
-await client.connect();
+
 await client.db("admin").command({ ping: 1 });
 ```
 
