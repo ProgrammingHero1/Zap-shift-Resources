@@ -11,7 +11,7 @@ A curated collection of tools, guides, and assets for developing robust parcel m
 | --------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------- |
 | **User**        | - Book parcels<br>- Pay charges<br>- Track status<br>- Review service                     | - Real-time tracking<br>- Feedback opportunity |
 | **Admin**       | - Assign agents<br>- Manage routing<br>- Oversee warehouses<br>- Monitor operations       | - System control<br>- Operational oversight    |
-| **Agent/Rider** | - Collect/Deliver parcels<br>- Update status<br>- OTP confirmation<br>- Warehouse handoff | - ৳20 per delivery                             |
+| **Rider**       | - Collect/Deliver parcels<br>- Update status<br>- OTP confirmation<br>- Warehouse handoff | - ৳ 80% per delivery in the same city <br> 60% outside |
 
 ---
 
@@ -59,3 +59,4 @@ flowchart TD
 ---
 
 ---
+
