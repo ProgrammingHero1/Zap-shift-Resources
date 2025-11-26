@@ -33,8 +33,8 @@
 
 1. **Admins** are system operators responsible for managing parcel logistics and overseeing operational efficiency. Their key functions include:
 
-   1. Manage , Approve / Reject Agent
-   2. Assigning pickup riders & Delivery Riders.
+   1. Manage , Approve / Reject Rider
+   2. Assigning pickup Riders for a parcel to Delivery.
    3. Managing inter-district parcel routing and coordinating service center operations.
    4. Monitoring parcel movement, performance, and overall system operations.
 
